@@ -47,7 +47,7 @@ tooltip {
 
 #workspaces button.active {
   color: @text;
-  background-color: @overlay;
+  background-color: @highlightMed;
   border-radius: 20px;
 }
 
@@ -81,7 +81,7 @@ tooltip {
 #cpu {
   margin: 0;
   padding: 0 0.1em 0 0.1em;
-  color: @pine;
+  color: @foam;
 }
 
 #network {
@@ -99,7 +99,7 @@ tooltip {
 #disk {
   margin: 0;
   padding: 0 0.1em 0 0.1em;
-  color: @pine;
+  color: @foam;
 }
 
 #window {
