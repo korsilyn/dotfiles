@@ -67,7 +67,7 @@ tooltip {
 }
 
 #memory {
-  color: @pine;
+  color: @foam;
   padding: 0 0.3em 0 0.5em;
   border-radius: 10px 0 0 10px;
 }
@@ -93,7 +93,7 @@ tooltip {
 #language {
   margin: 0;
   padding: 0 0.1em;
-  color: @rose;
+  color: @love;
 }
 
 #disk {
