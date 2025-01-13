@@ -36,7 +36,7 @@ tooltip {
   color: @text;
   font-weight: bolder;
   margin: 2px 2px;
-  min-width: 10px;
+  min-width: 30px;
 }
 
 #workspaces button:hover {
