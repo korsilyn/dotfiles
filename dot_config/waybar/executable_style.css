@@ -8,23 +8,23 @@
 }
 
 .modules-right {
-  background-color: @surface0;
+  background-color: @surface;
   padding: 0rem 0.7rem 0rem 0.7rem;
   margin: 5px 0px 5px 0px;
 }
 
 .modules-center {
-  background-color: @surface0;
+  background-color: @surface;
   margin: 5px 0px 5px 0px;
 }
 
 .modules-left {
-  background-color: @surface0;
+  background-color: @surface;
   margin: 5px 0px 5px 0px;
 }
 
 tooltip {
-  background-color: @surface0;
+  background-color: @surface;
   color: @text;
 }
 
@@ -40,14 +40,14 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background-color: alpha(@overlay0, 0.5);
+  background-color: alpha(@overlay, 0.5);
   color: @text;
   border-radius: 20px;
 }
 
 #workspaces button.active {
   color: @text;
-  background-color: @overlay0;
+  background-color: @overlay;
   border-radius: 20px;
 }
 
@@ -58,16 +58,16 @@ tooltip {
 }
 
 #idle_inhibitor {
-  color: #d4be98;
+  color: @muted;
   padding: 0 0.1em 0 0.1em;
 }
 
 #idle_inhibitor.activated {
-  color: #d3869b;
+  color: @love;
 }
 
 #memory {
-  color: #a9b665;
+  color: @pine;
   padding: 0 0.3em 0 0.5em;
   border-radius: 10px 0 0 10px;
 }
@@ -75,35 +75,35 @@ tooltip {
 #pulseaudio {
   margin: 0;
   padding: 0 0.4em 0 0.4em;
-  color: #d8a657;
+  color: @gold;
 }
 
 #cpu {
   margin: 0;
   padding: 0 0.1em 0 0.1em;
-  color: #a9b665;
+  color: @pine;
 }
 
 #network {
   margin: 0;
   padding: 0 0.4em 0 0.5em;
-  color: #d8a657;
+  color: @gold;
 }
 
 #language {
   margin: 0;
   padding: 0 0.1em;
-  color: #d3869b;
+  color: @rose;
 }
 
 #disk {
   margin: 0;
   padding: 0 0.1em 0 0.1em;
-  color: #a9b665;
+  color: @pine;
 }
 
 #window {
-  color: #ebdbb2;
+  color: @highlightMed;
   margin-left: 0rem;
   margin-right: 1rem;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.818);
