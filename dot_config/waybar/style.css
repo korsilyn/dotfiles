@@ -8,24 +8,24 @@
 }
 
 .modules-right {
-  background-color: @surface;
+  background-color: @background-darker;
   padding: 0rem 0.7rem 0rem 0.7rem;
   margin: 5px 0px 5px 0px;
 }
 
 .modules-center {
-  background-color: @surface;
+  background-color: @background;
   margin: 5px 0px 5px 0px;
 }
 
 .modules-left {
-  background-color: @surface;
+  background-color: @background;
   margin: 5px 0px 5px 0px;
 }
 
 tooltip {
-  background-color: @surface;
-  color: @text;
+  background-color: @background;
+  color: @selection;
 }
 
 #workspaces {
@@ -33,7 +33,7 @@ tooltip {
 }
 
 #workspaces button {
-  color: @text;
+  color: @selection;
   font-weight: bolder;
   margin: 2px 2px;
   min-width: 30px;
