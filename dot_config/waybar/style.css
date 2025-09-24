@@ -8,24 +8,24 @@
 }
 
 .modules-right {
-  background-color: @background-darker;
+  background: @background;
   padding: 0rem 0.7rem 0rem 0.7rem;
   margin: 5px 0px 5px 0px;
 }
 
 .modules-center {
-  background-color: @background;
+  background: @background;
   margin: 5px 0px 5px 0px;
 }
 
 .modules-left {
-  background-color: @background;
+  background: @background;
   margin: 5px 0px 5px 0px;
 }
 
 tooltip {
-  background-color: @background;
-  color: @selection;
+  background: @background;
+  color: @foreground;
 }
 
 #workspaces {
@@ -33,77 +33,79 @@ tooltip {
 }
 
 #workspaces button {
-  color: @selection;
+  background: @background;
+  color: @foreground;
   font-weight: bolder;
   margin: 2px 2px;
   min-width: 30px;
+  border-radius: 20px;
 }
 
 #workspaces button:hover {
-  background-color: alpha(@overlay, 0.5);
-  color: @text;
+  background: @selection;
+  color: @foreground;
   border-radius: 20px;
 }
 
 #workspaces button.active {
-  color: @text;
-  background-color: @highlightMed;
+  background: @selection;
+  color: @foreground;
   border-radius: 20px;
 }
 
 #clock {
+  color: @foreground;
   font-weight: bolder;
-  color: @text;
   padding: 0rem 1rem 0rem 1rem;
 }
 
 #idle_inhibitor {
-  color: @muted;
+  color: @comment;
   padding: 0 0.1em 0 0.1em;
 }
 
 #idle_inhibitor.activated {
-  color: @love;
+  color: @pink;
 }
 
 #memory {
-  color: @foam;
+  color: @cyan;
   padding: 0 0.3em 0 0.5em;
   border-radius: 10px 0 0 10px;
 }
 
 #pulseaudio {
-  margin: 0;
+  color: @yellow;
   padding: 0 0.4em 0 0.4em;
-  color: @gold;
+  margin: 0;
 }
 
 #cpu {
-  margin: 0;
+  color: @cyan;
   padding: 0 0.1em 0 0.1em;
-  color: @foam;
+  margin: 0;
 }
 
 #network {
-  margin: 0;
+  color: @orange;
   padding: 0 0.4em 0 0.5em;
-  color: @gold;
+  margin: 0;
 }
 
 #language {
-  margin: 0;
+  color: @purple;
   padding: 0 0.1em;
-  color: @love;
+  margin: 0;
 }
 
 #disk {
-  margin: 0;
+  color: @cyan;
   padding: 0 0.1em 0 0.1em;
-  color: @foam;
+  margin: 0;
 }
 
 #window {
-  color: @highlightMed;
+  color: @selection;
   margin-left: 0rem;
   margin-right: 1rem;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.818);
