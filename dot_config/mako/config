@@ -6,20 +6,16 @@ icon-path="/usr/share/icons/Tela-circle-dark"
 default-timeout=5000
 ignore-timeout=1
 
-## Rose Pine
-background-color=#26233a
-text-color=#e0def4
-border-color=#524f67
-progress-color=over #31748f
+background-color=#282a36
+text-color=#44475a
+border-color=#282a36
+
+[urgency=low]
+border-color=#282a36
+
+[urgency=normal]
+border-color=#f1fa8c
 
 [urgency=high]
-border-color=#eb6f92
+border-color=#ff5555
 
-## Catppuccin
-# background-color=#1e1e2e
-# text-color=#cdd6f4
-# border-color=#cba6f7
-# progress-color=over #313244
-
-# [urgency=high]
-# border-color=#fab387
