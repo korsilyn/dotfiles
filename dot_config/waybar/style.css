@@ -45,6 +45,8 @@ tooltip {
   background: @selection;
   color: @foreground;
   border-radius: 20px;
+  box-shadow: inherit;
+  text-shadow: inherit;
 }
 
 #workspaces button.active {
