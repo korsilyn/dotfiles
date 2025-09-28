@@ -1,117 +1,120 @@
 @import "catppuccin_macchiato.css";
 
 * {
-  border-radius: 10px;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 14px;
-  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  font-family: "Iosevka Nerd Font Mono", monospace;
+  font-size: 16px;
+  min-height: 25px;
 }
 
-.modules-right {
-  background: @background;
-  padding: 0rem 0.7rem 0rem 0.7rem;
-  margin: 5px 0px 5px 0px;
-}
-
-.modules-center {
-  background: @background;
-  margin: 5px 0px 5px 0px;
-}
-
-.modules-left {
-  background: @background;
-  margin: 5px 0px 5px 0px;
+#waybar {
+  background: transparent;
+  color: @text;
 }
 
 tooltip {
-  background: @background;
-  color: @foreground;
+  border-radius: 25px;
+  background: alpha(@surface0, 0.9);
+  color: @text;
+}
+
+#workspaces,
+#clock,
+#idle_inhibitor,
+#cpu,
+#memory,
+#disk,
+#pulseaudio,
+#network,
+#language {
+  background-color: @base;
+  color: @text;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
 #workspaces {
-  margin: 1px 5px 1px 5px;
+  margin-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #workspaces button {
-  background: @background;
-  color: @foreground;
-  font-weight: bolder;
-  margin: 2px 2px;
-  min-width: 20px;
-  border-radius: 20px;
-}
-
-#workspaces button:hover {
-  background: @selection;
-  color: @foreground;
-  border-radius: 20px;
+  color: @mauve;
+  border-radius: 25px;
+  margin: 0px 2px;
+  min-width: 25px;
+  min-height: 25px;
   box-shadow: inherit;
   text-shadow: inherit;
 }
 
 #workspaces button.active {
-  background: @selection;
-  color: @foreground;
-  border-radius: 20px;
+  background-color: @mauve;
+  color: @base;
+}
+
+#workspaces button:hover {
+  background-color: alpha(@mauve, 0.7);
+  color: @base;
 }
 
 #clock {
-  color: @foreground;
-  font-weight: bolder;
-  padding: 0rem 1rem 0rem 1rem;
+  color: @mauve;
+}
+
+#idle_inhibitor,
+#cpu,
+#memory,
+#disk,
+#pulseaudio,
+#network,
+#language {
+  margin-right: 5px;
 }
 
 #idle_inhibitor {
-  color: @comment;
-  padding: 0 0.1em 0 0.1em;
+  color: @text;
+  font-size: 25px;
+  min-width: 25px;
+  padding: 0px 7px 0px 7px;
 }
 
 #idle_inhibitor.activated {
-  color: @pink;
-}
-
-#memory {
-  color: @cyan;
-  padding: 0 0.3em 0 0.5em;
-  border-radius: 10px 0 0 10px;
-}
-
-#pulseaudio {
-  color: @yellow;
-  padding: 0 0.4em 0 0.4em;
-  margin: 0;
+  color: @red;
 }
 
 #cpu {
-  color: @cyan;
-  padding: 0 0.1em 0 0.1em;
-  margin: 0;
+  color: @teal;
+  border-radius: 25px 0px 0px 25px;
+  margin-right: 0px;
 }
 
-#network {
-  color: @orange;
-  padding: 0 0.4em 0 0.5em;
-  margin: 0;
-}
-
-#language {
-  color: @purple;
-  padding: 0 0.1em;
-  margin: 0;
+#memory {
+  color: @teal;
+  border-radius: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #disk {
-  color: @cyan;
-  padding: 0 0.1em 0 0.1em;
-  margin: 0;
+  color: @teal;
+  border-radius: 0px 25px 25px 0px;
 }
 
-#window {
-  color: @selection;
-  margin-left: 0rem;
-  margin-right: 1rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.818);
-  transition: all 0.1s ease-in-out;
-  border-radius: 0px;
-  font-size: 15px;
+#pulseaudio {
+  color: @maroon;
+}
+
+#network {
+  color: @peach;
+}
+
+#language {
+  color: @mauve;
+  margin-right: 10px;
 }

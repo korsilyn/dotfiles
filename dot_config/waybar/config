@@ -1,67 +1,88 @@
 {
-  "layer": "top",
-  "position": "top",
-  "spacing": 0,
-  "height": 56,
-  "margin-left": 15,
-  "margin-right": 15,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
-  "modules-right": ["idle_inhibitor", "cpu", "memory", "disk", "pulseaudio", "network", "hyprland/language"],
+  "layer"    : "top",
+  "position" : "top",
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "cpu",
+    "memory",
+    "disk",
+    "pulseaudio",
+    "network",
+    "hyprland/language"
+  ],
   "hyprland/workspaces": {
-     "on-scroll-up": "hyprctl dispatch workspace e+1",
-     "on-scroll-down": "hyprctl dispatch workspace e-1"
+    "format"         : "{icon} {name}",
+    "format-icons": {
+      "active"       : "◉",
+      "default"      : "●"
+    },
+    "on-scroll-up"   : "hyprctl dispatch workspace e+1",
+    "on-scroll-down" : "hyprctl dispatch workspace e-1"
   },
-  "hyprland/language": {
-	  "format": "  {short}",
+  "clock": {
+    "tooltip-format"  : "<tt>{calendar}</tt>",
+    "format"          : "{:%d %b %Y  %R}",
+    "calendar": {
+      "mode"          : "year",
+      "mode-mon-col"  : 4,
+      "weeks-pos"     : "left",
+      "format": {
+        "months"      : "<span color='#f5bde6'><b>{}</b></span>",
+        "days"        : "<span color='#c6a0f6'><b>{}</b></span>",
+        "weeks"       : "<span color='#f5bde6'><b>W{}</b></span>",
+        "weekdays"    : "<span color='#f0c6c6'><b>{}</b></span>",
+        "today"       : "<span color='#ed8796'><b><u>{}</u></b></span>"
+      }
+    }
   },
   "idle_inhibitor": {
-    "format": "{icon}",
+    "format"        : "{icon}",
     "format-icons": {
-      "activated": " ",
-      "deactivated": " "
+      "activated"   : "",
+      "deactivated" : ""
     }
   },
   "cpu": {
-    "interval": 1,
-    "format": "   {usage}%"
+    "interval" : 1,
+    "format"   : " {usage}%"
   },
   "memory": {
-    "interval": 1,
-	  "format": "  {percentage}%",
-	  "max-lenght": 25,
-    "min-length": 6
+    "interval" : 1,
+	"format"   : " {percentage}%"
   },
   "disk": {
-	  "interval": 30,
-    "format": "󰋊 {percentage_used}%",
-    "path": "/",
-    "tooltip": true,
-    "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
-	  "max-lenght": 25,
-    "min-length": 6
-  },
-  "clock": {
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
-  },
-  "network": {
-	  "format": "{ifname}",
-	  "format-ethernet": "  {ifname}",
-    "format-wifi": "  {essid}",
-    "format-linked": "  {ifname} (No IP)",
-	  "format-disconnected": "Disconnected",
-    "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+	"interval"       : 60,
+    "format"         : "󰋊 {percentage_used}%",
+    "path"           : "/",
+    "tooltip"        : true,
+    "tooltip-format" : "{used} used out of {total} on {path} ({percentage_used}%)"
   },
   "pulseaudio": {
-    "scroll-step": 0,
-    "format": "{icon}  {volume}% {format_source}",
-    "format-muted": " {format_source}%",
-    "format-source": " {volume}%",
-    "format-source-muted": " ",
+    "scroll-step"         : 0,
+    "format"              : "{icon} {volume}% {format_source}",
+    "format-muted"        : " {format_source}%",
+    "format-source"       : " {volume}%",
+    "format-source-muted" : "",
     "format-icons": {
-      "default": ["", "", ""]
+      "default"           : ["", "", ""]
     },
-    "on-click": "helvum"
-  }
+    "on-click"            : "helvum"
+  },
+  "network": {
+	"format"              : "{ifname}",
+	"format-ethernet"     : " {ifname}",
+    "format-wifi"         : " {essid}",
+    "format-linked"       : " {ifname} (No IP)",
+	"format-disconnected" : "Disconnected",
+    "tooltip-format"      : "{ifname}: {ipaddr}/{cidr}"
+  },
+  "hyprland/language": {
+	  "format" : " {short}"
+  },
 }
