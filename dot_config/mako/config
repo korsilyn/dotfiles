@@ -6,16 +6,10 @@ icon-path="/usr/share/icons/Tela-circle-dark"
 default-timeout=5000
 ignore-timeout=1
 
-background-color=#282a36
-text-color=#f8f8f2
-border-color=#282a36
-
-[urgency=low]
-border-color=#282a36
-
-[urgency=normal]
-border-color=#f1fa8c
+background-color=#24273a
+text-color=#cad3f5
+border-color=#c6a0f6
+progress-color=over #363a4f
 
 [urgency=high]
-border-color=#ff5555
-
+border-color=#f5a97f
