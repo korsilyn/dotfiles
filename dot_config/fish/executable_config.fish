@@ -46,4 +46,4 @@ function gil
 end
 abbr wineb 'bottles-cli run -b Windows -e'
 
-fish_config theme choose "Dracula Official"
+fish_config theme choose "Catppuccin Macchiato"
