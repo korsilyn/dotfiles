@@ -12,10 +12,13 @@ set $term kitty
 set $menu fuzzel
 
 ### Output configuration
-output "DP-3" {
-    mode 2560x1440@164.834Hz
+outpur * {
     adaptive_sync on
 }
+#output "DP-1" {
+#    mode 2560x1440@164.834Hz
+#    adaptive_sync on
+#}
 
 ### Input configuration
 ## Keyboard
