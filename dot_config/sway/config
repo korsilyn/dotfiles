@@ -12,6 +12,21 @@ set $menu fuzzel
 set $cursor_theme "Catppuccin Macchiato Light"
 set $cursor_size 24
 
+#
+### Autoexec
+#
+seat seat0 xcursor_theme $cursor_theme $cursor_size
+
+exec {
+	swayidle -w &
+	autotiling-rs &
+	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+	cliphist wipe &
+	wl-paste --watch cliphist store &
+	xhost +SI:localuser:root &
+}
+
+#
 ### Output configuration
 output * {
     adaptive_sync on
@@ -161,6 +176,10 @@ client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
 
+### SwayFX
+corner_radius 14
+default_dim_inactive 0.1
+
 #
 ### FIXES
 ## GLOBAL
@@ -204,28 +223,8 @@ for_window [title="^Steam Keyboard$"] floating enable
 ### CUSTOM BINDS
 #
 bindsym control+shift+escape exec $term htop
-for_window [shell="xwayland"] title_format "[XWayland] %title"
 
 
-#
-### Autoexec
-#
-seat seat0 xcursor_theme $cursor_theme $cursor_size
-
-exec {
-	swayidle -w &
-	autotiling-rs &
-	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-	cliphist wipe &
-	wl-paste --watch cliphist store &
-}
-
-exec_always {
-	export XCURSOR_THEME=$cursor_theme
-	export XCURSOR_SIZE=$cursor_size
-}
-
-#
 ### Window configs
 #
 
