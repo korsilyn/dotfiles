@@ -14,11 +14,9 @@ set $menu fuzzel
 ### Output configuration
 output * {
     adaptive_sync on
+    render_bit_depth 10
+    bg ~/.config/backgrounds/finalizer.png fill
 }
-#output "DP-1" {
-#    mode 2560x1440@164.834Hz
-#    adaptive_sync on
-#}
 
 ### Input configuration
 ## Keyboard
@@ -257,15 +255,10 @@ for_window [shell="xwayland"] title_format "[XWayland] %title"
 ### Autoexec
 #
 exec swayidle -w &
-exec autotiling &
-exec waybar &
-exec swaybg -i ~/.config/backgrounds/finalizer.png &
-exec mako &
+exec autotiling-rs &
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec cliphist wipe &
 exec wl-paste --watch cliphist store &
-exec nekoray &
-# exec wayneko --layer top &
 
 #
 ### Window configs
