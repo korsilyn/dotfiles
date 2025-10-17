@@ -12,7 +12,7 @@ set $term kitty
 set $menu fuzzel
 
 ### Output configuration
-outpur * {
+output * {
     adaptive_sync on
 }
 #output "DP-1" {
