@@ -66,10 +66,9 @@ tooltip {
   margin-left: 5px;
 }
 
-window#waybar.empty {
+window#waybar.empty #window {
   background-color: transparent;
 }
-
 
 #clock {
   color: @mauve;
