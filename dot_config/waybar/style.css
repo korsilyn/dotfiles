@@ -66,7 +66,7 @@ tooltip {
   margin-left: 5px;
 }
 
-window#waybar.empty #window {
+#window waybar.empty {
   background-color: transparent;
 }
 
