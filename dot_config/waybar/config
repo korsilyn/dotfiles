@@ -2,7 +2,8 @@
   "layer"    : "top",
   "position" : "top",
   "modules-left": [
-    "hyprland/workspaces"
+    "sway/workspaces",
+    "sway/window"
   ],
   "modules-center": [
     "clock"
@@ -14,16 +15,18 @@
     "disk",
     "pulseaudio",
     "network",
-    "hyprland/language"
+    "sway/language"
   ],
-  "hyprland/workspaces": {
+  "sway/workspaces": {
     "format"         : "{icon} {name}",
     "format-icons": {
-      "active"       : "◉",
+      "focused"       : "◉",
       "default"      : "●"
-    },
-    "on-scroll-up"   : "hyprctl dispatch workspace e+1",
-    "on-scroll-down" : "hyprctl dispatch workspace e-1"
+    }
+  },
+  "sway/window": {
+    "format": "{title}",
+    "max-length": 50
   },
   "clock": {
     "tooltip-format"  : "<tt>{calendar}</tt>",
@@ -82,7 +85,8 @@
 	"format-disconnected" : "Disconnected",
     "tooltip-format"      : "{ifname}: {ipaddr}/{cidr}"
   },
-  "hyprland/language": {
-	  "format" : " {short}"
+  "sway/language": {
+	  "format" : " {short}",
+      "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
   },
 }
