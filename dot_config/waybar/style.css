@@ -64,6 +64,7 @@ tooltip {
 }
 
 #window {
+  color: @mauve;
   margin-left: 5px;
 }
 
