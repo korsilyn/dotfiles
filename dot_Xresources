@@ -1,3 +1,5 @@
+Xcursor.theme: catppuccin-macchiato-light-cursors
+Xcursor.size: 24
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
 *.background: #282A36
