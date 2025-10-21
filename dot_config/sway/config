@@ -9,7 +9,7 @@ set $term kitty
 # application manager
 set $menu fuzzel
 # cursors
-set $cursor_theme "Catppuccin Macchiato Light"
+set $cursor_theme "catppuccin-macchiato-light-cursors"
 set $cursor_size 24
 
 #
@@ -184,6 +184,8 @@ default_dim_inactive 0.1
 ### FIXES
 ## GLOBAL
 #
+for_window [class="^.*"] inhibit_idle fullscreen
+for_window [app_id="^.*"] inhibit_idle fullscreen
 for_window [window_role = "pop-up"] floating enable
 for_window [window_role = "bubble"] floating enable
 for_window [window_role = "dialog"] floating enable
