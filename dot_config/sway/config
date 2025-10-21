@@ -26,6 +26,10 @@ exec {
 	xhost +SI:localuser:root &
 }
 
+exec_always {
+	test -f ~/.Xresources && xrdb -merge ~/.Xresources
+}
+
 #
 ### Output configuration
 output * {
