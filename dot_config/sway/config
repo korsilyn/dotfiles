@@ -34,7 +34,7 @@ exec_always {
 ### Output configuration
 output * {
     adaptive_sync on
-    render_bit_depth 10
+    # render_bit_depth 10
     bg ~/.config/backgrounds/finalizer.png fill
 }
 
