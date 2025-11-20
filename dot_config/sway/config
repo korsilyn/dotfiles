@@ -36,7 +36,7 @@ output DP-1 {
     adaptive_sync on
     # render_bit_depth 10
     bg ~/.config/backgrounds/finalizer.png fill
-    mode 2560x1440@164.834Hz
+    mode 2560x1440@165Hz
 }
 
 ### Input configuration
