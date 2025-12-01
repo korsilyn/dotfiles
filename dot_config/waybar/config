@@ -17,14 +17,14 @@
     "network",
     "niri/language"
   ],
-  "sway/workspaces": {
+  "niri/workspaces": {
     "format"         : "{icon} {name}",
     "format-icons": {
       "focused"       : "◉",
       "default"      : "●"
     }
   },
-  "sway/window": {
+  "niri/window": {
     "format": "{title}",
     "max-length": 50
   },
@@ -85,7 +85,7 @@
 	"format-disconnected" : "Disconnected",
     "tooltip-format"      : "{ifname}: {ipaddr}/{cidr}"
   },
-  "sway/language": {
+  "niri/language": {
 	  "format" : " {short}",
       "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
   },
