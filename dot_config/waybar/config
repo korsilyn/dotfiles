@@ -2,8 +2,8 @@
   "layer"    : "top",
   "position" : "top",
   "modules-left": [
-    "sway/workspaces",
-    "sway/window"
+    "niri/workspaces",
+    "niri/window"
   ],
   "modules-center": [
     "clock"
@@ -15,7 +15,7 @@
     "disk",
     "pulseaudio",
     "network",
-    "sway/language"
+    "niri/language"
   ],
   "sway/workspaces": {
     "format"         : "{icon} {name}",
