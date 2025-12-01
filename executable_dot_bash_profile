@@ -1,3 +1,1 @@
-if uwsm check may-start; then
-    exec uwsm start sway.desktop
-fi
+exec niri-session
